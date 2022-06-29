@@ -1,0 +1,223 @@
+<!-- Curso HTML barbu (etiquetas) -->
+
+<!-- "DOCTYPE" es una etiqueta que se utiliza para decirle
+al explorardor web que el contenido de este documento es HTML5
+y no Quirks mode --><!DOCTYPE html>
+
+<!-- "html" es la etiqueta raiz de todo documento 
+html--><html>
+
+<!-- "head" dentro de esta etiqueta podremos agregar 
+    caracteristicas que va a tenre nuestra web --><head>
+
+        <!-- "style" es una etiqueta de css que se debe añadir en head,
+        no en body, para que tenga efectos sobre las demas etiquetas. Esta nos ayudara
+    a darle estilo a los valores que introduzcamos -->
+
+        <style>
+            table, th, td {
+
+                border: 1px solid black
+            }
+    
+        </style>
+
+   <!-- "title" esta indica cual sera el titulo de nuestra pagina 
+    web ---> <title>Mi segunda web</title>
+
+<!-- Cierre de "head" --></head>
+   
+ <!-- "body" aqui es donde se va a incluir todo el contenido de 
+    nuestra web--><body>
+
+        <!--"Etiquetas de heading" estas se utilizan para poder entregarle 
+            titulos o subtitulos al contenido dentro de nuestra web 
+            (no lo utilices para agrandar ni cambiar texto)-->
+
+        <h1>Mi primer heading</h1>
+        <h2>Mi segundo heading</h2>
+        <h3>Mi tercer heading</h3>
+        <h4>Mi cuarto heading</h4>
+        <h5>Mi quinto heading</h5>
+        <h6>Hola mundo</h6>
+            
+            <!-- "p" esta es la etiqueta de parrafo, dentro de esta podemos 
+                colocar el texto que queramos -->
+
+                <p>Hasta ahora vamos bien.</p>
+                <p>Dique</p>
+
+                <!-- "hr" sirve para separar heading, parrafos o secciones -->
+
+                <hr>
+
+                <h1>Mi primer heading de prueba</h1> 
+                <h2>Mi segundo heading de prueba</h2> 
+                <h3>Mi tercer heading de prueba</h3>
+                <h4>Mi cuarto heading de prueba</h4>
+                <h5>Mi quinto heading de prueba</h5>
+                <h6>Hello world</h6>
+                <hr>
+                <p>Hasta ahora vamos bien.</p>
+                <p>Dique</p>   
+                  
+                <!-- "span" sirve para resaltar texto que se encuentra dentro de 
+                    otras etiquetas --> <!-- Haremos trampa y utilizaremos un poco 
+                        de css (style)-->
+
+                    <p>Este texto es <span style= "color:red"> mucho mas largo para mostrar la etiqueta de span..</p>
+            
+                     <!-- "br" sirve para seguir texto muy largo en otra linea  -->   
+
+                    <p>vamos a probar la etiqueta br con este texto que es bastante largo <br> o eso intentamos que sea</p>
+                     <p>seguimo en prueba tranquilo,<br><br>
+                         no sea deseperao</p> 
+
+
+                         <!-- "a" la etiqueta de hipervinculo sirve para poder ir 
+                            desde una pagina web a otra pagina web, utilizando tambien la propiedad -href- --> 
+
+                            <a href="https://www.hbomax.com/do/es"> Ir a HBO MAX</a>
+                            <br><br>
+
+                            <!-- Utilizando la propiedad -target- podemos hacer que nuestro
+                            vinculo cargue en una nueva pestaña y no sobre la nuestra-->
+
+                            <a target="_blank" href="https://www.netflix.com/browse"> Ir a Netflix</a>  
+
+                            
+                            <!-- "img" esta etiqueta nos ayuda a mostrar imagenes y modificarlas
+                            con ayuda de las propiedades -src-,-width- y -height- -->
+                                   
+                    
+                            <br><br>
+                                <img src="img/img_1.png" width="400" height="220">
+                                
+                                <br><br>
+
+                               <!-- "form" dentro de esta etiqueta tendremos que colocar los distintos campos
+                            que vamos a utilizar para recopilar informacion del usuario--> 
+
+                                <form action="/formulario" method="post">
+
+                                    <!--"label" es una etiqueta para agregar texto asociado aun control por medio del atributo for,
+                                    en el ejemplo de abajo "label" esta introduciendo el texto de nombre, al control identificado como nombre por medio del atributo "id" -->
+                                    <label > Nombre</label>
+                                    <input value= "valor1" type="text" id="nombre" name="nombre" placeholder="Saludando"> 
+                                    <br>
+                                    <label for="apellido"> Apellido</label>
+                                    <input value="valor2" type="text" id="apellido" name="apellido" placeholder="Saludando"> 
+                                    <br><br>
+                                    <label for="comentario"> Comentario</label>
+                                    <br>
+
+                                    <!--El "textarea" es ideal para "input" de textos largos, se diferencia de "input" por su capacidad para multiplicar lineas-->
+
+                                    <textarea cols="50" rows="10" id="comentario" name="comentario" placeholder="Ingrese comentario">valor3</textarea>
+                                    <br>
+                                    <input type="submit">
+
+
+                                    <!-- "Button" como su nombre lo dice se utiliza para crear elementos cliqueables,
+                                    lo bueno de este es que a diferencia de "input" si podemos agregar etiquetas dentro de este -->
+
+                                    <!--El de "Tipo button" tendremos que modificarlo utilizando Javascrit -->
+                                    <button type="button">Tipo button</button>
+
+                                    <!--El de "Tipo reset" va a dejar nuestro formulario con los valores iniciales -->
+                                    <button type="reset">Tipo reset</button>
+
+                                    <!--El de "Tipo submit" va a enviar nuestro formulario a la ruta que nosotros 
+                                        le hayamos indicado en action utilizando el method que le hayamos indicado -->
+                                    <button type="submit">Tipo submit</button>
+                                    
+                                    
+
+
+                                </form>
+
+                                <!-- "ul" significa lista no ordenada, o sea que cuando agreguemos elementos en esta 
+                                    lista estos apareceran con un punto negro-->
+                                <ul>
+
+                                    <li>Elemento 1</li>
+                                    <li>Elemento 2</li>
+                                    <li>Elemento 3</li>
+                                    <li>Elemento 4</li>
+
+                                </ul>
+
+                                <!-- "ol" que quiere decir lista ordenada, en esta lista podremos enumerar
+                                     nuestro contenido-->
+
+                                    <ol>
+
+                                     <li value="50">Elemento 1</li>
+                                     <li>Elemento 2</li>
+                                     <li>Elemento 3</li>
+                                     <li>Elemento 4</li>
+                                        <li>
+
+                                            <ol>
+                                              
+                                                <li style="list-style-type:lower-roman">sub elemento 1</li>
+                                                <li style="list-style-type:lower-greek">sub elemento 2</li>
+                                                <li style="list-style-type:lower-alpha">sub elemento 3</li>
+                                                <li style="list-style-type:lower-latin">sub elemento 4</li>
+
+                                            </ol>
+
+                                        </li>
+                                    </ol>
+
+
+
+                                    <table style="width:500px ;"> 
+
+                                        <!-- "thead" esta etiqueta nos va a servir para agrupar elementos 
+                                            que se encuentren en las cabeceras de nuestras tablas-->
+                                        <thead>                            
+                                             <tr>
+
+                                            <th>Producto</th>
+                                            <th>Precio</th>
+                                            <th>Pais</th>
+
+                                             </tr>
+                                     </thead>
+                                   
+                                     <!--"tbody" nos sirve para poder identificar o agrupar todas las filas 
+                                        que pertenezcan al cuerpo de nuestra tabla -->
+                                       <tbody>
+
+                                            <tfoot>
+                                                <td></td>
+                                                <td>Total: 188.89$</td>
+                                            </tfoot>
+                                        <tr> 
+                                            <td>God of War</td>
+                                            <td>Gratis</td>
+                                            <td>EE.UU</td>
+                                        </tr>
+
+                                        <tr> 
+                                            <td>Days gone</td>
+                                            <td>99.90$</td>
+                                            <td>PR</td>
+                                        </tr>
+
+                                        <tr> 
+                                            <td>Call of duty advanced warfare</td>
+                                            <td>88.99$</td>
+                                            <td>RD</td>
+                                        </tr>
+
+                                    </table>
+
+
+                                       </tbody>
+
+   
+
+<!-- Cierre de "body" --></body>
+<!-- Cierre de "html" --></html>
